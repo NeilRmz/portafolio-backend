@@ -58,7 +58,7 @@ function App() {
       <header className="fixed top-0 right-0 left-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
           <h1 className="text-base sm:text-lg md:text-xl font-bold text-green-600 dark:text-green-400">
-            Daniel Ramírez
+            Miguel D. Ramírez
           </h1>
           <button
             onClick={() => setDarkMode(!darkMode)}
