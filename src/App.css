@@ -1,0 +1,72 @@
+/* Estilos base para todos los SVG */
+svg {
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+  color: #ffadff;
+}
+
+/* Para íconos dentro de botones y header */
+button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Para íconos pequeños dentro de los proyectos */
+.flex svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Para el botón CTA */
+.inline-flex svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Hover effects */
+svg:hover {
+  transform: scale(1.1);
+  color: #ffc5ff;
+}
+
+/* Asegurar que los íconos con fill no tengan stroke */
+svg[fill="currentColor"] {
+  stroke: none;
+}
+
+/* Asegurar que los íconos con stroke tengan el ancho correcto */
+svg[stroke="currentColor"] {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+/* Efecto parallax en el fondo */
+.parallax-bg {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMzBhMTAgMTAgMCAwIDEgMTAgMTAgMTAgMTAgMCAwIDEtMTAgMTAgMTAgMTAgMCAwIDEtMTAtMTAgMTAgMTAgMCAwIDEgMTAtMTB6IiBmaWxsPSIjMjBDRjUwIiBmaWxsLW9wYWNpdHk9IjAuMDYiLz48L3N2Zz4=');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+/* Para modo oscuro, cambia el patrón */
+.dark .parallax-bg {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMzBhMTAgMTAgMCAwIDEgMTAgMTAgMTAgMTAgMCAwIDEtMTAgMTAgMTAgMTAgMCAwIDEtMTAtMTAgMTAgMTAgMCAwIDEgMTAtMTB6IiBmaWxsPSIjMjBDRjUwIiBmaWxsLW9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=');
+}
+
+/* Efecto de movimiento suave al hacer scroll */
+.parallax-bg {
+  transform: translateZ(0);
+  will-change: background-position;
+  animation: subtleMove 20s linear infinite;
+}
+
+@keyframes subtleMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
